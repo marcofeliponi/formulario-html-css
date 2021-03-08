@@ -1,3 +1,3 @@
 # formulario-html-css
 
-Formulário de cadastro de Desenvolvedores, utilizando HTML e CSS
+Formulário para cadastro de Desenvolvedores, utilizando HTML e CSS
