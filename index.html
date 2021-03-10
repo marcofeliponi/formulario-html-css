@@ -5,27 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrinnk-to-fit=no">
     
-    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"
     
     <title>Cadastro</title>
-    
-    <script>
-    function salvarForm(){
-       if (localStorage.cont) {
-          localStorage.cont = Number(localStorage.cont)+1;
-       } else {
-          localStorage.cont = 1;
-       }
-       
-       cad = document.getElementById('nome').value + ';' + document.getElementById('sobrenome').value + ';' + document.getElementById('email').value + ';' 
-       + document.getElementById('devweb').value + ';' + document.getElementById('senioridade').value + ';' + document.getElementById('tecnologia1');
-       localStorage.setItem("cad_"+localStorage.cont,cad);
-    }
-    </script>
-    
+
+    <script type="text/javascript" src="main.js"></script>
+
 </head>
 <body>
     
+    <div class="container">
+        <input class="storage" type="text">
+        <p class="text">Text</p>
+        <button class="button">Save</button>
+    </div>
+
     <div>
         <h1 id="titulo">Cadastro de DEVs</h1><br>
         <p id="subtitulo">Complete suas informações</p><br>
@@ -78,17 +72,17 @@
                 <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
-                <input type="checkbox" id="tecnologia2" name="tecnologia1" value="CSS">
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
                 <label for="tecnologia2">CSS</label>
-                <input type="checkbox" id="tecnologia3" name="tecnologia1" value="JavaScript">
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
                 <label for="tecnologia3">JavaScript</label>
-                <input type="checkbox" id="tecnologia4" name="tecnologia1" value="PHP">
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
                 <label for="tecnologia4">PHP</label>
-                <input type="checkbox" id="tecnologia5" name="tecnologia1" value="C#">
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
                 <label for="tecnologia5">C#</label>
-                <input type="checkbox" id="tecnologia6" name="tecnologia1" value="Python">
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
                 <label for="tecnologia6">Python</label>
-                <input type="checkbox" id="tecnologia7" name="tecnologia1" value="Java">
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
                 <label for="tecnologia7">Java</label>
             </div>
         </fieldset>
@@ -99,7 +93,7 @@
             <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
         </div>
 
-        <button class="botao" type="submit" onsubmit="">Concluído</button>
+        <button class="botao" type="submit" onclick="cadastraProduto()">Concluído</button>
 
         </form>
 
